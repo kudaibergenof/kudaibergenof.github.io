@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* натуральный бежевый */
+    color: #333; /* темный текст */
+}
+
+header {
+    background-color: #4CAF50; /* свежий зеленый */
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#hero {
+    padding: 50px;
+    text-align: center;
+}
+
+#menu {
+    padding: 50px;
+    background-color: white;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+#contact {
+    padding: 50px;
+    background-color: #fff; /* белый фон */
+    text-align: center;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+.carousel {
+    max-width: 600px; /* Установите максимальную ширину слайдера по вашему выбору */
+    margin: left auto; /* Центрирование слайдера на странице */
+}
+
+.carousel-item img {
+    width: 100%; /* Задаем ширину изображения на 100% от родительского контейнера */
+    height: 400px; /* Устанавливаем фиксированную высоту для изображения (в данном случае 200px) */
+    object-fit: cover; /* Это свойство позволяет изображению заполнять свой контейнер без сохранения пропорций, что приводит к деформации */
+    border-radius: 10px; /* Скругляем края изображения */
+}
+.this-menu {
+    text-align: center;
+    color: black;
+}
+.black-bg {
+    background-color: rgba(0, 0, 0, 0.7); /* Цвет темного прямоугольника */
+    border-radius: 10px; /* Скругление углов */
+    padding: 10px 20px; /* Отступы внутри прямоугольника */
+}
+.yellow-bg {
+    background-color: rgba(220, 255, 65, 0.7); /* Цвет темного прямоугольника */
+    border-radius: 10px; /* Скругление углов */
+    padding: 10px 20px; /* Отступы внутри прямоугольника */
+}
+.menu-block {
+    color: black;
+    margin-left: 20px;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px; /* Отступ между элементами меню */
+}
+
+.carousel {
+    width: 70%; /* Ширина слайдера */
+}
+
+.menu-block {
+    margin-left: 20px; /* Отступ слева */
+    padding: 20px; /* Внутренний отступ */
+    font-size: 14px; /* Уменьшаем размер шрифта */
+}
+
+.table-wrapper {
+    overflow-x: auto; /* Горизонтальная прокрутка таблицы */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #585858;
+}
+
+th {
+    background-color: #4CAF50;
+    color: black;
+}
+.menu-buttons {
+    text-align: center; /* Центрируем кнопки по горизонтали */
+    margin-bottom: 20px; /* Добавляем отступ снизу */
+}
+
+.menu-buttons button {
+    background-color: #FFC300; /* Цвет таблицы напитков */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Закругляем края кнопок */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.menu-buttons button:hover {
+    background-color: #FFA500; /* Изменяем цвет при наведении курсора */
+}
+/* Стили для формы бронирования */
+#reservation form {
+    max-width: 500px; /* Ширина формы */
+    margin: 0 auto; /* Центрируем форму по горизонтали */
+    padding: 20px;
+    background-color: #f9f9f9; /* Цвет фона формы */
+    border-radius: 10px; /* Закругляем углы формы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень формы */
+}
+
+#reservation h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для элементов формы */
+#reservation form .form-group {
+    margin-bottom: 15px;
+}
+
+#reservation form label {
+    display: block;
+    font-weight: bold;
+}
+
+#reservation form input[type="text"],
+#reservation form input[type="email"],
+#reservation form input[type="tel"],
+#reservation form input[type="date"],
+#reservation form input[type="time"],
+#reservation form input[type="number"],
+#reservation form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Учитываем padding в общей ширине элемента */
+}
+
+#reservation form textarea {
+    resize: vertical; /* Разрешаем изменение размера textarea по вертикали */
+}
+
+#reservation form button[type="submit"] {
+    background-color: #4CAF50; /* Цвет кнопки отправки */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+#reservation form button[type="submit"]:hover {
+    background-color: #45a049; /* Цвет кнопки при наведении */
+}

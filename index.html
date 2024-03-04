@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Cafe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+            <a class="navbar-brand" href="#">Organic Cafe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Бронирование</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section id="hero">
+        <h2>Добро пожаловать в наше кафе</h2>
+        <p>Наши блюда приготовлены из самых свежих органических ингредиентов, чтобы порадовать ваш вкус и заботиться о вашем здоровье.</p>
+    </section>
+    
+    <section id="menu" class="d-flex">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <!-- Добавьте больше слайдов по мере необходимости -->
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="avokado.jpg" alt="Зеленый салат с авокадо и кунжутным соусом">
+                    <div class="carousel-caption d-none d-md-block black-bg">
+                        <h5>Зеленый салат с авокадо и кунжутным соусом</h5>
+                        <p>Свежий салат из органических листьев с добавлением специального соуса.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="losos.jpg" alt="Лосось с маринованным лимоном и зеленым горошком">
+                    <div class="carousel-caption d-none d-md-block black-bg">
+                        <h5>Лосось с маринованным лимоном и зеленым горошком</h5>
+                        <p>Свежий лосось, приготовленный с маринованным лимоном и зеленым горошком.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="koktel.jpg" alt="Коктейль из шпината, банана и миндаля">
+                    <div class="carousel-caption d-none d-md-block black-bg">
+                        <h5>Коктейль из шпината, банана и миндаля</h5>
+                        <p>Освежающий коктейль, приготовленный из свежего шпината, спелого банана и миндаля.</p>
+                    </div>
+                </div>
+                <!-- Добавьте больше слайдов по мере необходимости -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="menu-buttons">
+            <button id="drinksButton" class="button-drinks">Напитки</button>
+            <button id="dishesButton" class="button-drinks">Блюда</button>
+        </div>
+        <div class="menu-block yellow-bg" id="drinks">
+            <h2 class="this-menu">Напитки</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Напиток</th>
+                            <th>Описание</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Коктейль из шпината, банана и миндаля</td>
+                            <td>Освежающий коктейль, приготовленный из свежего шпината, спелого банана и миндаля.</td>
+                            <td>550 тг</td>
+                        </tr>                        
+                        <tr>
+                            <td>Фреш апельсиновый</td>
+                            <td>Натуральный апельсиновый сок, приготовленный прямо перед подачей.</td>
+                            <td>400 тг</td>
+                        </tr>
+                        <tr>
+                            <td>Кофе латте</td>
+                            <td>Нежное сочетание кофе и молока, подается с мускатным орехом.</td>
+                            <td>500 тг</td>
+                        </tr>
+                        <tr>
+                            <td>Смузи ягодный</td>
+                            <td>Освежающий напиток смешанных ягод, приготовленный на основе натурального йогурта.</td>
+                            <td>600 тг</td>
+                        </tr>
+                        <tr>
+                            <td>Чай мята</td>
+                            <td>Ароматный чай с добавлением свежей мяты.</td>
+                            <td>350 тг</td>
+                        </tr>
+                        <!-- Добавьте другие напитки, если необходимо -->
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+        <div class="menu-block yellow-bg" id="dishes">
+            <h2 class="this-menu">Блюда</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Блюдо</th>
+                            <th>Описание</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Зеленый салат с авокадо и кунжутным соусом</td>
+                            <td>Свежий салат из органических листьев с добавлением специального соуса.</td>
+                            <td>5000 тг</td>
+                        </tr>
+                        <tr>
+                            <td>Лосось с маринованным лимоном и зеленым горошком</td>
+                            <td>Свежий лосось, приготовленный с маринованным лимоном и зеленым горошком.</td>
+                            <td>7500 тг</td>
+                        </tr>
+                        <tr>
+                            <td>Овощной тартар</td>
+                            <td>Смесь свежих овощей, тщательно нарезанных и заправленных оливковым маслом.</td>
+                            <td>6000 тг</td>
+                        </tr>
+                        <tr>
+                            <td>Киноа с овощами</td>
+                            <td>Ароматная киноа с тушеными овощами, подается с зеленым соусом.</td>
+                            <td>5500 тг</td>
+                        </tr>
+                        <tr>
+                            <td>Тыквенный крем-суп</td>
+                            <td>Нежный крем-суп из тыквы с добавлением специй и кокосового молока.</td>
+                            <td>4800 тг</td>
+                        </tr>
+                        <!-- Добавьте другие блюда, если необходимо -->
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+    </section>
+    
+    
+    <section id="reservation">
+        <h2>Бронирование</h2>
+        <form action="/submit_reservation" method="POST">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Время:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Количество гостей:</label>
+                <input type="number" id="guests" name="guests" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Дополнительные комментарии:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <button type="submit">Отправить бронь</button>
+        </form>
+        <br>
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Адрес: 123 ул. Здоровья, Зеленоград</p>
+        <p>Телефон: +7 123 456 7890</p>
+    </section>
+
+    <br>
+    
+    <footer>
+        <p>&copy; 2024 Organic Cafe. Все права защищены.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const drinksButton = document.getElementById('drinksButton');
+            const dishesButton = document.getElementById('dishesButton');
+            const drinksSection = document.getElementById('drinks');
+            const dishesSection = document.getElementById('dishes');
+
+            // По умолчанию показываем блюда
+            drinksSection.style.display = 'none';
+            
+            // Обработчики событий для кнопок переключения
+            drinksButton.addEventListener('click', function() {
+                drinksSection.style.display = 'block';
+                dishesSection.style.display = 'none';
+            });
+
+            dishesButton.addEventListener('click', function() {
+                drinksSection.style.display = 'none';
+                dishesSection.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
