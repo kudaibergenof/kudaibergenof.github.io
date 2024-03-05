@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 550px; /* width of three squares + space between them */
+  }
+
+  .square {
+    width: 500px;
+    height: 500px;
+    background-color: #8cbb26; /* Coral */
+  }
+
+  .square:nth-child(2) {
+    background-color: #f4e500; /* Steel Blue */
+  }
+
+  .square:nth-child(3) {
+    background-color: #fdc60b; /* Lime Green */
+  }
